@@ -67,11 +67,24 @@ praktikum-async/
   - Aplikasi Expo Go versi SDK 58 yang terinstall di Android/IOS
   - Android Studio Emulator atau Xcode iOS Simulator.
 
-2. Langkah Instalasi & Menjalankan Aolikasi
-   - **Jalankan Perintah install dependencies**
-     npm install
-   - **Jalankan Server Expo**
-     npx expo start
+### 2. Langkah Menjalankan Aplikasi
 
-3. Membuka Aplikasi
-   - Scan QR Code yang tampil di terminal menggunakan aplikasi Expo Go
+1. **Persiapkan Folder Proyek:**
+   - **Jika meng-clone via Git:**
+     ```bash
+     git clone [https://github.com/fahmicode10/vessel-logbook-mobile.git](https://github.com/fahmicode10/vessel-logbook-mobile.git)
+     cd vessel-logbook-mobile
+     ```
+   - **Jika membuka dari File ZIP :**
+     - Buka VS Code > pilih menu **File** > **Open Folder...** > pilih folder project(`praktikum-async`).
+     - _Pastikan terminal VS Code sudah berada di dalam folder proyek tersebut (tidak perlu mengetik `cd` lagi)._
+
+2. **Install Dependensi:**
+
+   ```bash
+   npm install
+
+   ```
+
+3. **Jalankan Aplikasi**
+   - npx expo start dan scan QR Code nya
