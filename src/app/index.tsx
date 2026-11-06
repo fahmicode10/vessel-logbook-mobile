@@ -147,7 +147,7 @@ export default function MainScreen() {
     } else {
       // SOAL 5: Mode Tambah Baru (INSERT) + Nama Teknisi
       const tanggalSekarang = new Date().toISOString().split("T")[0];
-      const teknisiAktif = namaTeknisi.trim() ? namaTeknisi : "-";
+      const teknisiAktif = namaTeknisi.trim() || inputNama.trim() || "-";
 
       const sukses = await tambahLog(
         peralatan,

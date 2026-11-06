@@ -48,7 +48,7 @@ export async function tambahLog(
     const db = await SQLite.openDatabaseAsync(DB_NAME);
     await db.runAsync(
       "INSERT INTO log_inspeksi (peralatan, suhu, status, tanggal, teknisi) VALUES (?, ?, ?, ?, ?);",
-      [peralatan, suhu, status, tanggal],
+      [peralatan, suhu, status, tanggal, teknisi],
     );
     return true;
   } catch (e) {
@@ -66,7 +66,7 @@ export async function ambilSemuaLog(
     if (kataKunci && kataKunci.trim() !== "") {
       return await db.getAllAsync<LogInspeksi>(
         "SELECT * FROM log_inspeksi WHERE peralatan LIKE ? ORDER BY id DESC;",
-        ["%${kataKunci.trim()}%"],
+        [`%${kataKunci.trim()}%`],
       );
     }
     return await db.getAllAsync<LogInspeksi>(
