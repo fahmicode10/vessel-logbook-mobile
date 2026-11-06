@@ -76,7 +76,8 @@ praktikum-async/
      cd vessel-logbook-mobile
      ```
    - **Jika membuka dari File ZIP :**
-     - Buka VS Code > pilih menu **File** > **Open Folder...** > pilih folder project(`praktikum-async`).
+     - Ekstrak file `P9_0925140149.zip`
+     - Buka VS Code > pilih menu **File** > **Open Folder...** > pilih folder hasil ekstrak(`P9_0925140149`).
      - _Pastikan terminal VS Code sudah berada di dalam folder proyek tersebut (tidak perlu mengetik `cd` lagi)._
 
 2. **Install Dependensi:**
